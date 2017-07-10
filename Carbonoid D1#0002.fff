@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<profile name="Carbonoid D1#0002" version="2017-03-30 20:42:56" app="S3D-Software 3.1.1">
+<profile name="Carbonoid D1#0002" version="2017-07-01 14:58:36" app="S3D-Software 3.1.1">
   <baseProfile>Default</baseProfile>
   <printMaterial>Green-TEC</printMaterial>
-  <printQuality>High</printQuality>
+  <printQuality>Medium</printQuality>
   <printExtruders></printExtruders>
   <extruder name="DyzEND-X">
     <toolheadNumber>0</toolheadNumber>
@@ -11,19 +11,19 @@
     <width>0.6</width>
     <extrusionMultiplier>0.85</extrusionMultiplier>
     <useRetract>1</useRetract>
-    <retractionDistance>5</retractionDistance>
-    <extraRestartDistance>-0.2</extraRestartDistance>
+    <retractionDistance>2.5</retractionDistance>
+    <extraRestartDistance>0</extraRestartDistance>
     <retractionZLift>0.4</retractionZLift>
-    <retractionSpeed>4800</retractionSpeed>
+    <retractionSpeed>1500</retractionSpeed>
     <useCoasting>1</useCoasting>
-    <coastingDistance>1</coastingDistance>
-    <useWipe>1</useWipe>
+    <coastingDistance>0.6</coastingDistance>
+    <useWipe>0</useWipe>
     <wipeDistance>1</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.1</layerHeight>
-  <topSolidLayers>10</topSolidLayers>
-  <bottomSolidLayers>8</bottomSolidLayers>
+  <layerHeight>0.2</layerHeight>
+  <topSolidLayers>4</topSolidLayers>
+  <bottomSolidLayers>4</bottomSolidLayers>
   <perimeterOutlines>2</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
   <startPointOption>2</startPointOption>
@@ -32,9 +32,9 @@
   <startPointOriginZ>300</startPointOriginZ>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>200</firstLayerHeightPercentage>
+  <firstLayerHeightPercentage>150</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+  <firstLayerUnderspeed>0.3</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftLayers>1</raftLayers>
@@ -44,7 +44,7 @@
   <disableRaftBaseLayers>0</disableRaftBaseLayers>
   <useSkirt>1</useSkirt>
   <skirtExtruder>0</skirtExtruder>
-  <skirtLayers>2</skirtLayers>
+  <skirtLayers>1</skirtLayers>
   <skirtOutlines>2</skirtOutlines>
   <skirtOffset>4</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
@@ -60,18 +60,18 @@
   <oozeShieldSidewallAngle>30</oozeShieldSidewallAngle>
   <oozeShieldSpeedMultiplier>1</oozeShieldSpeedMultiplier>
   <infillExtruder>0</infillExtruder>
-  <internalInfillPattern>Fast Honeycomb</internalInfillPattern>
+  <internalInfillPattern>Rectilinear</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
   <infillPercentage>66</infillPercentage>
   <outlineOverlapPercentage>30</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>125</infillExtrusionWidthPercentage>
   <minInfillLength>5</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
-  <infillAngles>0</infillAngles>
+  <infillAngles>45,-45</infillAngles>
   <overlapInfillAngles>0</overlapInfillAngles>
-  <generateSupport>0</generateSupport>
+  <generateSupport>1</generateSupport>
   <supportExtruder>0</supportExtruder>
-  <supportInfillPercentage>40</supportInfillPercentage>
+  <supportInfillPercentage>30</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
   <denseSupportLayers>0</denseSupportLayers>
   <denseSupportInfillPercentage>70</denseSupportInfillPercentage>
@@ -89,7 +89,7 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="200"/>
+    <setpoint layer="1" temperature="230"/>
   </temperatureController>
   <temperatureController name="Heated Bed Temperature">
     <temperatureNumber>0</temperatureNumber>
@@ -97,7 +97,7 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="55"/>
+    <setpoint layer="1" temperature="60"/>
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
@@ -168,7 +168,7 @@
   <useMinPrintHeight>0</useMinPrintHeight>
   <minPrintHeight>0</minPrintHeight>
   <useMaxPrintHeight>0</useMaxPrintHeight>
-  <maxPrintHeight>0</maxPrintHeight>
+  <maxPrintHeight>3.8</maxPrintHeight>
   <useDiaphragm>0</useDiaphragm>
   <diaphragmLayerInterval>20</diaphragmLayerInterval>
   <robustSlicing>1</robustSlicing>
@@ -242,7 +242,7 @@
     <topSolidLayers>3</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>25</infillPercentage>
+    <infillPercentage>66</infillPercentage>
     <supportInfillPercentage>25</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium">
@@ -326,14 +326,14 @@
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="Green-TEC">
-    <globalExtruderTemperature>200</globalExtruderTemperature>
+    <globalExtruderTemperature>230</globalExtruderTemperature>
     <temperatureController name="Heated Bed Temperature">
       <temperatureNumber>0</temperatureNumber>
       <isHeatedBed>1</isHeatedBed>
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="55"/>
+      <setpoint layer="1" temperature="60"/>
     </temperatureController>
     <globalExtrusionMultiplier>0.85</globalExtrusionMultiplier>
     <fanSpeed>

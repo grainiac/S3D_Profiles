@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<profile name="FrankensteinFelix" version="2017-04-29 18:35:22" app="S3D-Software 3.1.1">
+<profile name="FrankensteinFelix" version="2017-06-25 12:38:08" app="S3D-Software 3.1.1">
   <baseProfile>Default</baseProfile>
-  <printMaterial>PLA</printMaterial>
+  <printMaterial>Green-TEC</printMaterial>
   <printQuality>Medium</printQuality>
   <printExtruders></printExtruders>
   <extruder name="E3Dv6">
@@ -11,18 +11,18 @@
     <width>0.48</width>
     <extrusionMultiplier>0.9</extrusionMultiplier>
     <useRetract>1</useRetract>
-    <retractionDistance>4</retractionDistance>
+    <retractionDistance>2.5</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
-    <retractionZLift>0.25</retractionZLift>
+    <retractionZLift>0.4</retractionZLift>
     <retractionSpeed>1800</retractionSpeed>
     <useCoasting>1</useCoasting>
-    <coastingDistance>0.25</coastingDistance>
+    <coastingDistance>0.6</coastingDistance>
     <useWipe>0</useWipe>
     <wipeDistance>0</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
   <layerHeight>0.2</layerHeight>
-  <topSolidLayers>4</topSolidLayers>
+  <topSolidLayers>5</topSolidLayers>
   <bottomSolidLayers>4</bottomSolidLayers>
   <perimeterOutlines>2</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
@@ -37,11 +37,11 @@
   <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
-  <raftLayers>1</raftLayers>
+  <raftLayers>2</raftLayers>
   <raftOffset>3</raftOffset>
   <raftSeparationDistance>0.14</raftSeparationDistance>
   <raftInfill>85</raftInfill>
-  <disableRaftBaseLayers>0</disableRaftBaseLayers>
+  <disableRaftBaseLayers>1</disableRaftBaseLayers>
   <useSkirt>1</useSkirt>
   <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
@@ -62,14 +62,14 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Rectilinear</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>25</infillPercentage>
+  <infillPercentage>66</infillPercentage>
   <outlineOverlapPercentage>15</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>100</infillExtrusionWidthPercentage>
   <minInfillLength>2</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
   <infillAngles>45,-45</infillAngles>
   <overlapInfillAngles>0</overlapInfillAngles>
-  <generateSupport>0</generateSupport>
+  <generateSupport>1</generateSupport>
   <supportExtruder>0</supportExtruder>
   <supportInfillPercentage>35</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
@@ -89,7 +89,7 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="220"/>
+    <setpoint layer="1" temperature="210"/>
   </temperatureController>
   <temperatureController name="Heated Bed Temperature">
     <temperatureNumber>0</temperatureNumber>
@@ -97,11 +97,11 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="80"/>
+    <setpoint layer="1" temperature="60"/>
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="2" speed="100"/>
+    <setpoint layer="2" speed="50"/>
   </fanSpeed>
   <blipFanToFullPower>0</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
@@ -160,7 +160,7 @@
   <rapidZspeed>1998</rapidZspeed>
   <minBridgingArea>10</minBridgingArea>
   <bridgingExtraInflation>0.4</bridgingExtraInflation>
-  <bridgingExtrusionMultiplier>1.4</bridgingExtrusionMultiplier>
+  <bridgingExtrusionMultiplier>0.95</bridgingExtrusionMultiplier>
   <bridgingSpeedMultiplier>1.25</bridgingSpeedMultiplier>
   <filamentDiameter>1.75</filamentDiameter>
   <filamentPricePerKg>35</filamentPricePerKg>
@@ -188,19 +188,19 @@
   <thinWallAllowedOverlapPercentage>10</thinWallAllowedOverlapPercentage>
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
   <autoConfigureMaterial name="PLA">
-    <globalExtruderTemperature>220</globalExtruderTemperature>
+    <globalExtruderTemperature>215</globalExtruderTemperature>
     <temperatureController name="Heated Bed Temperature">
       <temperatureNumber>0</temperatureNumber>
       <isHeatedBed>1</isHeatedBed>
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="80"/>
+      <setpoint layer="1" temperature="63"/>
     </temperatureController>
-    <globalExtrusionMultiplier>0.9</globalExtrusionMultiplier>
+    <globalExtrusionMultiplier>0.95</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="100"/>
+      <setpoint layer="2" speed="75"/>
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="ABS">
@@ -246,35 +246,34 @@
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium">
     <layerHeight>0.2</layerHeight>
-    <topSolidLayers>4</topSolidLayers>
+    <topSolidLayers>5</topSolidLayers>
     <bottomSolidLayers>4</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>25</infillPercentage>
+    <infillPercentage>66</infillPercentage>
     <supportInfillPercentage>35</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="High">
-    <layerHeight>0.15</layerHeight>
-    <topSolidLayers>4</topSolidLayers>
-    <bottomSolidLayers>4</bottomSolidLayers>
+    <layerHeight>0.1</layerHeight>
+    <topSolidLayers>30</topSolidLayers>
+    <bottomSolidLayers>16</bottomSolidLayers>
     <skirtLayers>2</skirtLayers>
-    <infillPercentage>100</infillPercentage>
+    <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureMaterial name="PETG">
-    <globalExtruderTemperature>230</globalExtruderTemperature>
+    <globalExtruderTemperature>240</globalExtruderTemperature>
     <temperatureController name="Heated Bed Temperature">
       <temperatureNumber>0</temperatureNumber>
       <isHeatedBed>1</isHeatedBed>
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="120"/>
-      <setpoint layer="1" temperature="100"/>
+      <setpoint layer="1" temperature="80"/>
     </temperatureController>
-    <globalExtrusionMultiplier>0.9</globalExtrusionMultiplier>
+    <globalExtrusionMultiplier>0.85</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="25"/>
+      <setpoint layer="2" speed="50"/>
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="Green-TEC">
@@ -285,10 +284,9 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="70"/>
-      <setpoint layer="2" temperature="60"/>
+      <setpoint layer="1" temperature="60"/>
     </temperatureController>
-    <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
+    <globalExtrusionMultiplier>0.9</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="50"/>

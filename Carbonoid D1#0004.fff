@@ -1,30 +1,14 @@
 <?xml version="1.0"?>
-<profile name="Carbonoid D1#0004" version="2017-02-09 11:05:08" app="S3D-Software 3.1.1">
+<profile name="Carbonoid D1#0004" version="2017-06-07 19:40:06" app="S3D-Software 3.1.1">
   <baseProfile>Default</baseProfile>
   <printMaterial>PETG</printMaterial>
   <printQuality>Medium</printQuality>
   <printExtruders></printExtruders>
-  <extruder name="Prometheus V2 (BondtechQR Left)">
+  <extruder name="BondtechQR Left">
     <toolheadNumber>0</toolheadNumber>
-    <diameter>0.4</diameter>
+    <diameter>0.8</diameter>
     <autoWidth>1</autoWidth>
-    <width>0.48</width>
-    <extrusionMultiplier>0.85</extrusionMultiplier>
-    <useRetract>1</useRetract>
-    <retractionDistance>3</retractionDistance>
-    <extraRestartDistance>-0.2</extraRestartDistance>
-    <retractionZLift>0.4</retractionZLift>
-    <retractionSpeed>9600</retractionSpeed>
-    <useCoasting>1</useCoasting>
-    <coastingDistance>2</coastingDistance>
-    <useWipe>0</useWipe>
-    <wipeDistance>0</wipeDistance>
-  </extruder>
-  <extruder name="Prometheus V2 (BondtechQR Right)">
-    <toolheadNumber>1</toolheadNumber>
-    <diameter>0.4</diameter>
-    <autoWidth>1</autoWidth>
-    <width>0.48</width>
+    <width>0.96</width>
     <extrusionMultiplier>0.85</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>3</retractionDistance>
@@ -32,17 +16,17 @@
     <retractionZLift>0.4</retractionZLift>
     <retractionSpeed>4800</retractionSpeed>
     <useCoasting>1</useCoasting>
-    <coastingDistance>2</coastingDistance>
-    <useWipe>0</useWipe>
-    <wipeDistance>5</wipeDistance>
+    <coastingDistance>1</coastingDistance>
+    <useWipe>1</useWipe>
+    <wipeDistance>1</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
   <layerHeight>0.2</layerHeight>
   <topSolidLayers>5</topSolidLayers>
-  <bottomSolidLayers>4</bottomSolidLayers>
-  <perimeterOutlines>2</perimeterOutlines>
-  <printPerimetersInsideOut>0</printPerimetersInsideOut>
-  <startPointOption>3</startPointOption>
+  <bottomSolidLayers>5</bottomSolidLayers>
+  <perimeterOutlines>1</perimeterOutlines>
+  <printPerimetersInsideOut>1</printPerimetersInsideOut>
+  <startPointOption>2</startPointOption>
   <startPointOriginX>300</startPointOriginX>
   <startPointOriginY>0</startPointOriginY>
   <startPointOriginZ>0</startPointOriginZ>
@@ -50,7 +34,7 @@
   <spiralVaseMode>0</spiralVaseMode>
   <firstLayerHeightPercentage>150</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.33</firstLayerUnderspeed>
+  <firstLayerUnderspeed>0.3</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftLayers>1</raftLayers>
@@ -76,16 +60,16 @@
   <oozeShieldSidewallAngle>30</oozeShieldSidewallAngle>
   <oozeShieldSpeedMultiplier>1</oozeShieldSpeedMultiplier>
   <infillExtruder>0</infillExtruder>
-  <internalInfillPattern>Rectilinear</internalInfillPattern>
+  <internalInfillPattern>Fast Honeycomb</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>33</infillPercentage>
+  <infillPercentage>35</infillPercentage>
   <outlineOverlapPercentage>15</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>100</infillExtrusionWidthPercentage>
   <minInfillLength>2</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
-  <infillAngles>45,-45</infillAngles>
+  <infillAngles>0</infillAngles>
   <overlapInfillAngles>0</overlapInfillAngles>
-  <generateSupport>1</generateSupport>
+  <generateSupport>0</generateSupport>
   <supportExtruder>0</supportExtruder>
   <supportInfillPercentage>35</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
@@ -99,7 +83,7 @@
   <supportGridSpacing>4</supportGridSpacing>
   <maxOverhangAngle>45</maxOverhangAngle>
   <supportAngles>0</supportAngles>
-  <temperatureController name="Prometheus V2 Temperature">
+  <temperatureController name="E3Dv6 Temperature">
     <temperatureNumber>0</temperatureNumber>
     <isHeatedBed>0</isHeatedBed>
     <relayBetweenLayers>0</relayBetweenLayers>
@@ -117,7 +101,7 @@
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="2" speed="50"/>
+    <setpoint layer="2" speed="25"/>
   </fanSpeed>
   <blipFanToFullPower>0</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
@@ -142,7 +126,7 @@
   <machineTypeOverride>1</machineTypeOverride>
   <strokeXoverride>212</strokeXoverride>
   <strokeYoverride>212</strokeYoverride>
-  <strokeZoverride>285</strokeZoverride>
+  <strokeZoverride>459.5</strokeZoverride>
   <originOffsetXoverride>106</originOffsetXoverride>
   <originOffsetYoverride>106</originOffsetYoverride>
   <originOffsetZoverride>0</originOffsetZoverride>
@@ -168,7 +152,7 @@
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
   <postProcessing></postProcessing>
-  <defaultSpeed>6000</defaultSpeed>
+  <defaultSpeed>7200</defaultSpeed>
   <outlineUnderspeed>0.6</outlineUnderspeed>
   <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
   <supportUnderspeed>0.8</supportUnderspeed>
@@ -176,15 +160,15 @@
   <rapidZspeed>1998</rapidZspeed>
   <minBridgingArea>10</minBridgingArea>
   <bridgingExtraInflation>0.4</bridgingExtraInflation>
-  <bridgingExtrusionMultiplier>1.4</bridgingExtrusionMultiplier>
+  <bridgingExtrusionMultiplier>0.9</bridgingExtrusionMultiplier>
   <bridgingSpeedMultiplier>1.25</bridgingSpeedMultiplier>
-  <filamentDiameter>1.71</filamentDiameter>
+  <filamentDiameter>1.76</filamentDiameter>
   <filamentPricePerKg>27</filamentPricePerKg>
   <filamentDensity>1.25</filamentDensity>
   <useMinPrintHeight>0</useMinPrintHeight>
   <minPrintHeight>0</minPrintHeight>
-  <useMaxPrintHeight>0</useMaxPrintHeight>
-  <maxPrintHeight>0</maxPrintHeight>
+  <useMaxPrintHeight>1</useMaxPrintHeight>
+  <maxPrintHeight>398</maxPrintHeight>
   <useDiaphragm>0</useDiaphragm>
   <diaphragmLayerInterval>20</diaphragmLayerInterval>
   <robustSlicing>1</robustSlicing>
@@ -289,23 +273,23 @@
     <topSolidLayers>3</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>50</infillPercentage>
+    <infillPercentage>35</infillPercentage>
     <supportInfillPercentage>25</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium">
     <layerHeight>0.2</layerHeight>
     <topSolidLayers>5</topSolidLayers>
-    <bottomSolidLayers>4</bottomSolidLayers>
+    <bottomSolidLayers>5</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>33</infillPercentage>
+    <infillPercentage>35</infillPercentage>
     <supportInfillPercentage>35</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="High">
-    <layerHeight>0.15</layerHeight>
-    <topSolidLayers>4</topSolidLayers>
-    <bottomSolidLayers>4</bottomSolidLayers>
+    <layerHeight>0.1</layerHeight>
+    <topSolidLayers>15</topSolidLayers>
+    <bottomSolidLayers>8</bottomSolidLayers>
     <skirtLayers>2</skirtLayers>
-    <infillPercentage>100</infillPercentage>
+    <infillPercentage>25</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureMaterial name="PETG">
@@ -321,7 +305,7 @@
     <globalExtrusionMultiplier>0.85</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="50"/>
+      <setpoint layer="2" speed="25"/>
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="Green-TEC">

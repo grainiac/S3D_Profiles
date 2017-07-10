@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<profile name="Carbonoid D1" version="2017-02-20 15:57:21" app="S3D-Software 3.1.1">
+<profile name="Carbonoid D1" version="2017-05-16 19:29:17" app="S3D-Software 3.1.1">
   <baseProfile>Default</baseProfile>
-  <printMaterial>PETG</printMaterial>
+  <printMaterial>Green-TEC</printMaterial>
   <printQuality>Medium</printQuality>
   <printExtruders></printExtruders>
   <extruder name="E3D Volcano">
@@ -9,7 +9,7 @@
     <diameter>0.6</diameter>
     <autoWidth>1</autoWidth>
     <width>0.72</width>
-    <extrusionMultiplier>0.9</extrusionMultiplier>
+    <extrusionMultiplier>1</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>2.5</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
@@ -45,7 +45,7 @@
   <useSkirt>1</useSkirt>
   <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
-  <skirtOutlines>3</skirtOutlines>
+  <skirtOutlines>2</skirtOutlines>
   <skirtOffset>4</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
@@ -62,14 +62,14 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Rectilinear</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>35</infillPercentage>
+  <infillPercentage>66</infillPercentage>
   <outlineOverlapPercentage>20</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>103</infillExtrusionWidthPercentage>
   <minInfillLength>1</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
   <infillAngles>45,-45</infillAngles>
   <overlapInfillAngles>0</overlapInfillAngles>
-  <generateSupport>0</generateSupport>
+  <generateSupport>1</generateSupport>
   <supportExtruder>0</supportExtruder>
   <supportInfillPercentage>30</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
@@ -97,11 +97,10 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="85"/>
+    <setpoint layer="1" temperature="55"/>
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="2" speed="50"/>
   </fanSpeed>
   <blipFanToFullPower>0</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
@@ -126,7 +125,7 @@
   <machineTypeOverride>1</machineTypeOverride>
   <strokeXoverride>198</strokeXoverride>
   <strokeYoverride>198</strokeYoverride>
-  <strokeZoverride>235</strokeZoverride>
+  <strokeZoverride>180</strokeZoverride>
   <originOffsetXoverride>99</originOffsetXoverride>
   <originOffsetYoverride>99</originOffsetYoverride>
   <originOffsetZoverride>0</originOffsetZoverride>
@@ -249,7 +248,7 @@
     <topSolidLayers>5</topSolidLayers>
     <bottomSolidLayers>4</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>35</infillPercentage>
+    <infillPercentage>66</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="High">
@@ -315,7 +314,7 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="50"/>
+      <setpoint layer="1" temperature="55"/>
     </temperatureController>
     <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
     <fanSpeed>
